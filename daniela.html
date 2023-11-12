@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Calobrizi - Joias e Semijoias</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            color: #d50000;
+        }
+
+        header {
+            background-color: #d50000;
+            /* Vermelho escuro */
+            color: #fff;
+            text-align: none;
+            padding: 5px;
+            display: flex;
+        }
+
+        h2 {
+
+            margin-left: 2%;
+        }
+
+        .topbar {
+            background-color: #d50000;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .topbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #fff;
+            /* Branco */
+            padding: 1em;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            /* Ajuste conforme necessário */
+            left: 0;
+            z-index: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 10px 10px;
+            margin: 5px;
+            border-radius: 3px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            /* Cinza escuro */
+            font-weight: bold;
+            font-size: 1.2em;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #d50000;
+            /* Vermelho escuro ao passar o mouse */
+        }
+
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5em;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .highlight-section {
+            background-color: #ffcccb;
+            /* Tom de vermelho claro */
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .highlight-section img-container {
+            text-align: center;
+        }
+
+        .highlight-section img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+            border-radius: 25% 0;
+            border: 7px solid #d50000;
+            position: relative;
+        }
+
+        .highlight-section .price {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .highlight-section img:hover {
+            transform: scale(1.2);
+            /* Aumenta em 20% ao passar o mouse */
+        }
+
+        .more-sold-section {
+            background-color: #ffcccb;
+            /* Tom de vermelho claro */
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .more-sold-section img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+            border-radius: 25% 0;
+            border: 7px solid #d50000;
+        }
+
+        .more-sold-section img:hover {
+            transform: scale(1.2);
+            /* Aumenta em 20% ao passar o mouse */
+        }
+
+        #img{
+
+            margin-left: 50px;
+            display:flex;
+            margin-top: 15px;
+        }
+        
+
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+       <div id="img"> 
+        <img src="https://3.bp.blogspot.com/-bwI-Pr1rNVg/WHoSXAJN_XI/AAAAAAAAYrQ/Z3VV1nvjrqATUy6WtGqJ-DgIRe0UsiOTQCLcB/s1600/Gifs%2Banimados%2BDiamante%2B1.gif" alt="diamond" width="40" height="40">
+       </div>
+       <h2>Daniela Calobrizi</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./daniela.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="./coleção.html" onclick="toggleMenu()">Coleção</a></li>
+            <li><a href="./quem-somos.html" onclick="toggleMenu()">Quem Somos</a></li>
+            <li><a href="./contato.html" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <h2>Ofertas em Destaque</h2>
+        <!-- Aqui você pode adicionar os produtos em destaque -->
+        <div class="highlight-section">
+            <div class="img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF2zd3kdhS_VOE49BgGcgiU5cVbF0J4BGpsPktkp-0IUW-hYHQmxbtDdvG39_EtXaFMQw&usqp=CAU"
+                    alt="Produto 1">
+                <br>
+                <s style="color: black; font-weight: bold;">$45,00</s> $35,00
+
+            </div>
+
+            <div class="img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_jG_VEOngZGPkN9J2i29CdsqCDPZAb-thRLnmxwHB9MhMvNdLUd4SyUOHqCJu-bLJaE&usqp=CAU"
+                    alt="Produto 2">
+                <br>
+                <s style="color: black; font-weight: bold;">$45,00</s> $35,00
+            </div>
+            <div class="img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIK79ujC87_vAup3ysU9E5ZTvOsomEd33pOw&usqp=CAU"
+                    alt="Produto 3">
+                <br>
+                <s style="color: black; font-weight: bold;">$45,00</s> $35,00
+            </div>
+        </div>
+        <h2>Mais Vendidos</h2>
+
+        <div class="highlight-section">
+            <div class="img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF2zd3kdhS_VOE49BgGcgiU5cVbF0J4BGpsPktkp-0IUW-hYHQmxbtDdvG39_EtXaFMQw&usqp=CAU"
+                    alt="Produto 1">
+                <br>
+                <s style="color: black; font-weight: bold;">$45,00</s> $35,00
+
+            </div>
+
+            <div class="img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_jG_VEOngZGPkN9J2i29CdsqCDPZAb-thRLnmxwHB9MhMvNdLUd4SyUOHqCJu-bLJaE&usqp=CAU"
+                    alt="Produto 2">
+                <br>
+                <s style="color: black; font-weight: bold;">$45,00</s> $35,00
+            </div>
+            <div class="img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIK79ujC87_vAup3ysU9E5ZTvOsomEd33pOw&usqp=CAU"
+                    alt="Produto 3">
+                <br>
+                <s style="color: black; font-weight: bold;">$45,00</s> $35,00
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="topbar">
+            <a href="https://www.facebook.com/100063871936535" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/daniellacalobriziacessorios" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="daniela.calobrizi.acessorios@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.querySelector('nav');
+            navMenu.style.display = (navMenu.style.display === 'none' || navMenu.style.display === '') ? 'flex' : 'none';
+        }
+    </script>
+</body>
+
+</html>

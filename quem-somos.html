@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Calobrizi - Quem Somos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            color: #d50000;
+        }
+
+        header {
+            background-color: #d50000;
+            /* Vermelho escuro */
+            color: #fff;
+            text-align: none;
+            padding: 5px;
+            display: flex;
+        }
+
+        h2 {
+
+            margin-left: 2%;
+        }
+
+        .topbar {
+            background-color: #d50000;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .topbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #fff;
+            /* Branco */
+            padding: 1em;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            /* Ajuste conforme necessário */
+            left: 0;
+            z-index: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 10px 10px;
+            margin: 5px;
+            border-radius: 3px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            /* Cinza escuro */
+            font-weight: bold;
+            font-size: 1.2em;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #d50000;
+            /* Vermelho escuro ao passar o mouse */
+        }
+
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5em;
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .designer-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .designer-section img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .more-sold-section {
+            background-color: #ffcccb;
+            /* Tom de vermelho claro */
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .more-sold-section img {
+            width: 150px;
+            height: auto;
+            transition: transform 0.3s;
+            border-radius: 25% 0;
+            border: 7px solid #d50000;
+        }
+
+        .more-sold-section img:hover {
+            transform: scale(1.2);
+            /* Aumenta em 20% ao passar o mouse */
+        }
+
+        #img {
+
+            margin-left: 50px;
+            display: flex;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div id="img">
+            <img src="https://3.bp.blogspot.com/-bwI-Pr1rNVg/WHoSXAJN_XI/AAAAAAAAYrQ/Z3VV1nvjrqATUy6WtGqJ-DgIRe0UsiOTQCLcB/s1600/Gifs%2Banimados%2BDiamante%2B1.gif"
+                alt="diamond" width="40" height="40">
+        </div>
+        <h2>Daniela Calobrizi</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./daniela.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="./coleção.html" onclick="toggleMenu()">Coleção</a></li>
+            <li><a href="./quem-somos.html" onclick="toggleMenu()">Quem Somos</a></li>
+            <li><a href="./contato.html" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <h2>Quem Somos</h2>
+        <p>
+            Bem-vindo à Daniela Calobrizi - Joias e Semijoias. Somos uma empresa dedicada a oferecer
+            produtos de alta qualidade e design exclusivo. Nossa paixão por joias reflete em cada peça
+            que criamos, desde as coleções mais clássicas até as mais modernas.
+        </p>
+        <p>
+            Fundada em [ano de fundação], nossa missão é proporcionar aos nossos clientes uma experiência
+            única ao escolherem suas joias. Trabalhamos com os melhores materiais e artesãos, garantindo
+            durabilidade e beleza em cada criação.
+        </p>
+        <p>
+            Agradecemos por escolher Daniela Calobrizi - Joias e Semijoias. Estamos aqui para ajudar e
+            proporcionar momentos especiais através de nossas peças.
+        </p>
+
+        <!-- Seção do Designer -->
+        <div class="designer-section">
+            <h3>Nosso Designer</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj_NjhqOLIFZb66elqWbyak09rLPjHfhNbeeDHQGUCv_i8WBxP8rjZzhF-OKWGwRmvNNs&usqp=CAU"
+                alt="Foto do Designer">
+        </div>
+    </div>
+
+    <footer>
+        <div class="topbar">
+            <a href="https://www.facebook.com/100063871936535" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/daniellacalobriziacessorios" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="daniela.calobrizi.acessorios@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.querySelector('nav');
+            navMenu.style.display = (navMenu.style.display === 'none' || navMenu.style.display === '') ? 'flex' : 'none';
+        }
+    </script>
+</body>
+
+</html>
